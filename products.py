@@ -11,10 +11,11 @@ while True:
 	# products.append([name, price])
 print(products)
 
+#列出清單
 for p in products:
 	print(p[0],'的價格是', p[1])
 
-
+# 建立txt資料檔
 with open('products.csv', 'w') as f:
 	for p in products:
 		f.write(p[0] + ',' + p[1] + '\n')
